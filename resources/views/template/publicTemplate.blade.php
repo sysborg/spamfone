@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-    @include('template.head', ['title' => 'Spamfone'])
+    @include('template.head', ['title' => $title])
     <body>
-        @include('template.header', ['title' => 'Spamfone', 'slogan' => 'Compartilhar é a melhor forma de se proteger!'])
+        @include('template.header', ['title' => $title, 'slogan' => $slogan])
 
         <div class="container">
             @yield('page')
