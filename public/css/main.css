@@ -29,6 +29,8 @@
     padding: 10px;
     text-align: center;
     color: #677E52 !important;
+    max-width: 638px;
+    margin: 0 auto;
 }
 
 .head-bg .content h1{
@@ -37,7 +39,7 @@
 
 .head-bg .content .slogan{
     color: #89725B !important;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .head-bg .content svg{
@@ -88,6 +90,5 @@ svg{
 }
 
 .logo{
-    max-width: 638px;
     margin: 0 auto;
 }
