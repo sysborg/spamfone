@@ -1,4 +1,4 @@
-@extends('template.publicTemplate.blade.php', ['title' => 'Spamfone', 'slogan' => 'Compartilhar é a melhor forma de se proteger!'])
+@extends('template.publicTemplate', ['title' => 'Spamfone', 'slogan' => 'Compartilhar é a melhor forma de se proteger!'])
 
 @section('page')
 <div class="row" style="margin-top: 30px;">
