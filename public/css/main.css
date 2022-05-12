@@ -1,0 +1,88 @@
+/** Powered by Anderson Arruda and Sysborg - sysborg.com.br | andersonarruda.com.br **/
+*{
+    font-family: 'Itim', cursive !important;
+}
+
+.head-bg{
+    position: relative;
+    background: rgb(176,204,144);
+    background: linear-gradient(180deg, rgba(176,204,144,1) 81%, rgba(143,165,119,1) 100%);
+}
+
+.head-bg .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1 !important;
+}
+
+.head-bg *{
+    z-index: 2;
+}
+
+.head-bg .bg img{
+    max-width: 100%;
+    height: auto;
+}
+
+.head-bg .content{
+    padding: 10px;
+    text-align: center;
+    color: #677E52 !important;
+}
+
+.head-bg .content h1{
+    font-size: 72px;
+}
+
+.head-bg .content .slogan{
+    color: #89725B !important;
+    font-size: 24px;
+}
+
+.head-bg .content svg{
+    width: 68px;
+    height: 88px;
+}
+
+svg{
+    fill: #677E52 !important;
+    color: #677E52 !important;
+}
+
+.input{
+    border: 1px solid #677E52;
+}
+
+.btn-spamfone{
+    border: 1px solid #677E52;
+    background-color: #B0CC90;
+}
+
+.card-spamfone .card{
+    border: 1px solid #677E52 !important;
+    margin-bottom: 30px;
+    color: #677E52;
+    font-size: 20px;
+}
+
+.card-spamfone p{
+    margin-bottom: 0.5rem;
+}
+
+.card-spamfone .highlight{
+    color: #89725B;
+}
+
+.alert-spamfone{
+    border-radius: 2px;
+    border: 1px solid #FF0000;
+    background: #FF0000;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.alert-spamfone h1, .alert-spamfone h2, .alert-spamfone h3
+.alert-spamfone h4, .alert-spamfone h5, .alert-spamfone h6{
+    margin: 0;
+}
