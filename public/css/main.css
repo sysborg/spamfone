@@ -86,3 +86,8 @@ svg{
 .alert-spamfone h4, .alert-spamfone h5, .alert-spamfone h6{
     margin: 0;
 }
+
+.logo{
+    max-width: 638px;
+    margin: 0 auto;
+}
