@@ -17,12 +17,12 @@ class CountrySeeder extends Seeder
     {
         Country::create([
             'name'      => 'Brasil',
-            'id_iso3166'    => 'BR'
+            'id_iso3166'    => 76
         ]);
 
         Country::create([
             'name'      => 'United States of America',
-            'id_iso3166'    => 'US'
+            'id_iso3166'    => 840
         ]);
     }
 }
