@@ -8,5 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class ContactType extends Model
 {
     use HasFactory;
-    protected $fillable = ['type', 'active'];
 }

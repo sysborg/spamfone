@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('contact_types', function (Blueprint $table) {
+        Schema::create('spam_types', function (Blueprint $table) {
             $table->id();
             $table->timestampsTz();
-            $table->string('type', 30);
+            $table->string('type', 150);
             $table->boolean('active');
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contact_types');
+        Schema::dropIfExists('spam_types');
     }
 };

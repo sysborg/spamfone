@@ -16,15 +16,15 @@ return new class extends Migration
         Schema::create('reported_spam', function (Blueprint $table) {
             $table->id();
             $table->timestampsTz();
-            $table->bigInteger('contact_type_id');
-            $table->foreign('contact_type_id')->references('id')->on('contact_types')->onDelete('RESTRICT')->onUpdate('CASCADE');
             $table->bigInteger('spam_type_id');
-            $table->foreign('spam_type_id')->references('id')->on('spam_types')->onDelete('RESTRICT')->onUpdate('CASCADE');
+            $table->bigInteger('reported_data_id');
             $table->ipAddress('ip');
-            $table->string('caller_name', 60)->nullable();
             $table->string('reported_name', 60);
-            $table->string('description', 350);
-            $table->smallInteger('grade');
+            $table->string('whistleblower_name', 60);
+            $table->string('comment', 350);
+            $table->bigInteger('grade');
+            $table->foreign('spam_type_id')->references('id')->on('spam_types')->onUpdate('cascade')->onDelete('restrict');
+            $table->foreign('reported_data_id')->references('id')->on('reported_data')->onUpdate('cascade')->onDelete('restrict');
         });
     }
 
