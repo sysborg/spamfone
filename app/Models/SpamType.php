@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class SpamType extends Model
 {
     use HasFactory;
-    protected array $fillable = ['type', 'active'];
+    protected $fillable = ['type', 'active'];
 }
