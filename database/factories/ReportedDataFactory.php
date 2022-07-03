@@ -16,11 +16,14 @@ class ReportedDataFactory extends Factory
      */
     public function definition()
     {
+        $contact_type = $this->faker->numberBetween(1, 3);
+        $reported = in_array($contact_type, [1, 3]) ? $this->faker->e164PhoneNumber() : $this->faker->email();
+
         return [
-            'reported_data' => '',
-            'country_id' => '',
-            'contact_type_id' => '',
-            'avg_grade' => ''
+            'reported_data' => $reported,
+            'country_id' => $this->faker->numberBetween(1,2),
+            'contact_type_id' => $contact_type,
+            'avg_grade' => 0
         ];
     }
 }
