@@ -33,4 +33,16 @@ class ReportedData extends Model
     {
         return $this->belongsTo(ContactType::class);
     }
+
+    /**
+     * Get all reported spam
+     * @version     1.0.0
+     * @author      Anderson Arruda < andmarruda@gmail.com >
+     * @param
+     * @return      Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function reportedSpam() : \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(ReportedSpam::class);
+    }
 }
