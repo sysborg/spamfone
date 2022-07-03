@@ -29,8 +29,8 @@ class ReportedSpam extends Model
      * @param       
      * @return      Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function reportedSpam() : \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function reportedData() : \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(ReportedSpam::class);
+        return $this->belongsTo(ReportedData::class);
     }
 }
