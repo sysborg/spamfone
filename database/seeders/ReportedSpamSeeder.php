@@ -15,6 +15,6 @@ class ReportedSpamSeeder extends Seeder
      */
     public function run()
     {
-        ReportedSpam::factory()->count(500)->create();
+        ReportedSpam::factory()->count(1000)->create();
     }
 }
