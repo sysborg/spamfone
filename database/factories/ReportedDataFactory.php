@@ -17,7 +17,10 @@ class ReportedDataFactory extends Factory
     public function definition()
     {
         return [
-            //'repoted_data', 'country_id', 'contact_type_id', 'avg_grade'
+            'reported_data' => '',
+            'country_id' => '',
+            'contact_type_id' => '',
+            'avg_grade' => ''
         ];
     }
 }

@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('reported_data', function (Blueprint $table) {
             $table->id();
             $table->timestampsTz();
-            $table->string('repoted_data', 300);
+            $table->string('reported_data', 300);
             $table->bigInteger('country_id');
             $table->bigInteger('contact_type_id');
             $table->bigInteger('avg_grade')->nullable();
